@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0 — 2026-08-21
+
+- Separação maior entre a lateral (sidebar, rail de ícones, cabeçalho da
+  sidebar, painel inferior, sticky scroll, peek view) e o fundo do editor:
+  `#16121F` → `#1B1730`. As sete chaves que compartilhavam esse valor
+  seguem compartilhando — continuam a mesma cor entre si, só sobem juntas
+  em relação ao `editor.background` (`#0D0B14`, inalterado).
+
 ## 1.2.0 — 2026-08-21
 
 - Paleta inteira remapeada pra mais contraste e saturação, mantendo a mesma

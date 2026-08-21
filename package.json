@@ -2,7 +2,7 @@
   "name": "nebula-theme",
   "displayName": "Nebula Theme",
   "description": "Dark theme derived from a Space Isolation GRUB menu and its sibling Konsole color scheme — one identity across boot, terminal, and editor.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "publisher": "thebuda",
   "license": "MIT",
   "engines": { "vscode": "^1.100.0" },

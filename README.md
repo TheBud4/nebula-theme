@@ -27,7 +27,7 @@ Theme**.
 | Papel | Cor |
 |---|---|
 | Fundo | `#0D0B14` |
-| Painéis / sidebar | `#16121F` |
+| Painéis / sidebar | `#1B1730` |
 | Cromo (title bar, tabs inativas) | `#1A1624` |
 | Borda | `#29243A` |
 | Texto | `#B8B4B0` |
