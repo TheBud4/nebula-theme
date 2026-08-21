@@ -26,38 +26,43 @@ Theme**.
 
 | Papel | Cor |
 |---|---|
-| Fundo | `#121019` |
-| Painéis / sidebar | `#151321` |
-| Cromo (title bar, tabs inativas) | `#1D1A28` |
-| Borda | `#232032` |
-| Texto | `#ACA8A5` |
-| Texto forte | `#F2EFEC` |
-| Metadado (line numbers, breadcrumb) | `#6A6280` |
-| Inativo | `#3A3548` |
-| Destaque (cursor, strings, git added) | `#5AEB71` |
-| Vermelho (erro, deletado) | `#FF5C7A` |
-| Amarelo (aviso, números) | `#FFC857` |
-| Azul (tipos, info) | `#5B8CFF` |
-| Violeta (keywords) | `#B45AFF` |
-| Ciano (funções) | `#22E0D0` |
+| Fundo | `#0D0B14` |
+| Painéis / sidebar | `#16121F` |
+| Cromo (title bar, tabs inativas) | `#1A1624` |
+| Borda | `#29243A` |
+| Texto | `#B8B4B0` |
+| Texto forte | `#FFFFFF` |
+| Metadado (line numbers, breadcrumb) | `#7A7290` |
+| Inativo | `#423C56` |
+| Destaque (cursor, strings, git added) | `#4AFF6B` |
+| Vermelho (erro, deletado) | `#FF4570` |
+| Amarelo (aviso, números) | `#FFD23F` |
+| Azul (tipos, info) | `#4A85FF` |
+| Violeta (keywords) | `#C355FF` |
+| Ciano (funções) | `#0FF0DC` |
 
-131 chaves de cor cobertas (editor, sidebar, tabs, terminal com as 16 cores
+136 chaves de cor cobertas (editor, sidebar, tabs, terminal com as 16 cores
 ANSI completas, git decorations, botões, notificações, peek view, diff
 editor, merge conflicts, scrollbar, gutter), 17 `tokenColors` e 18
 `semanticTokenColors` — cobertura pensada pra não cair no azul padrão do
 Dark+ em nenhum canto comum da UI.
+
+A barra de título também segue o tema: com `"window.titleBarStyle": "custom"`
+o próprio VS Code desenha a faixa de título usando `titleBar.activeBackground`,
+em vez de deixar o compositor do sistema desenhar por fora, fora do tema.
 
 ## Por que existe
 
 Nasceu de uma restauração de sistema (Fedora, pós-formatação) onde o
 objetivo era ter a mesma identidade visual entre o menu de boot, o
 terminal e o editor, em vez de três temas escolhidos sem relação entre
-si. O verde de destaque (`#5AEB71`) e o texto cinza-quente (`#ACA8A5`)
-vêm direto do tema do GRUB; o fundo é mais claro que o preto puro do GRUB
-(`#121019` em vez de `#000000`) porque, com o fundo levantado, o cinza dos
-metadados sobe junto e a hierarquia entre texto e metadado fica mais nítida
-numa tela de editor, onde se olha por muito mais tempo que numa tela de
-boot.
+si. A versão 1.0/1.1 usava os valores exatos do tema do GRUB e do Konsole
+(verde `#5AEB71`, texto `#ACA8A5`, fundo `#121019`). A partir da 1.2, o
+Nebula Theme puxou o contraste e a saturação pra cima especificamente para
+o editor — onde se olha por muito mais tempo, num monitor tipicamente mais
+claro que uma tela de boot — então os valores **não batem mais 1:1** com o
+Konsole/GRUB. A identidade (mesmos matizes, mesma hierarquia de camadas)
+continua a mesma; os números mudaram.
 
 ## Changelog
 
