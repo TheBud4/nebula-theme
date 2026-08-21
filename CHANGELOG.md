@@ -7,6 +7,14 @@
   `#16121F` → `#1B1730`. As sete chaves que compartilhavam esse valor
   seguem compartilhando — continuam a mesma cor entre si, só sobem juntas
   em relação ao `editor.background` (`#0D0B14`, inalterado).
+- **Instalação corrigida.** O README recomendava `cp -r` a pasta do repo
+  pra dentro de `~/.vscode/extensions/` — isso funciona no primeiro
+  momento, mas o VS Code marca a pasta como obsoleta sozinho a cada
+  abertura (não está registrada em `extensions.json` com os metadados que
+  ele espera de uma instalação real) e o tema some do seletor em silêncio
+  depois de qualquer reinício. Passou a distribuir `.vsix` via
+  [Releases](https://github.com/TheBud4/nebula-theme/releases) — instale
+  com `code --install-extension`, nunca copiando a pasta à mão.
 
 ## 1.2.0 — 2026-08-21
 

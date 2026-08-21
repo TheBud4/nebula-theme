@@ -11,16 +11,32 @@ usa o tema, sinta-se à vontade a mandar um screenshot de verdade num PR.)*
 
 ## Instalar
 
-**Do Marketplace:** ainda não publicado lá — por enquanto, instale a partir
-do código-fonte:
+**Do Marketplace:** ainda não publicado lá — por enquanto, baixe o `.vsix`
+da [página de releases](https://github.com/TheBud4/nebula-theme/releases)
+e instale pelo CLI:
+
+```bash
+code --install-extension nebula-theme-1.3.0.vsix
+```
+
+⚠️ **Não copie a pasta do repo direto para `~/.vscode/extensions/`.** O VS
+Code espera que uma extensão passe pelo fluxo de instalação oficial (que
+registra ela em `extensions.json` com os metadados certos); uma pasta
+colada à mão fica marcada como obsoleta pelo próprio VS Code a cada
+abertura e some do seletor de temas em silêncio. Sempre `.vsix` +
+`code --install-extension`.
+
+Para empacotar seu próprio `.vsix` a partir do código-fonte:
 
 ```bash
 git clone https://github.com/TheBud4/nebula-theme.git
-cp -r nebula-theme ~/.vscode/extensions/nebula-theme
+cd nebula-theme
+npx @vscode/vsce package
+code --install-extension nebula-theme-*.vsix
 ```
 
-Reabra o VS Code, `Ctrl+Shift+P` → **Preferences: Color Theme** → **Nebula
-Theme**.
+Depois de instalar (por qualquer um dos dois jeitos), reabra o VS Code,
+`Ctrl+Shift+P` → **Preferences: Color Theme** → **Nebula Theme**.
 
 ## Paleta
 
