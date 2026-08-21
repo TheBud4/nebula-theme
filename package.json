@@ -1,0 +1,29 @@
+{
+  "name": "nebula-theme",
+  "displayName": "Nebula Theme",
+  "description": "Dark theme derived from a Space Isolation GRUB menu and its sibling Konsole color scheme — one identity across boot, terminal, and editor.",
+  "version": "1.1.0",
+  "publisher": "thebuda",
+  "license": "MIT",
+  "engines": { "vscode": "^1.100.0" },
+  "categories": ["Themes"],
+  "keywords": ["theme", "dark theme", "color theme", "nebula"],
+  "icon": "icon.png",
+  "galleryBanner": { "color": "#121019", "theme": "dark" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheBud4/nebula-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/TheBud4/nebula-theme/issues"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Nebula Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nebula-theme-color-theme.json"
+      }
+    ]
+  }
+}
