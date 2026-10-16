@@ -3,4 +3,6 @@
 .vscodeignore
 *.md
 !README.md
-preview.png
+docs/**
+scripts/**
+*.vsix

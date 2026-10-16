@@ -1,5 +1,17 @@
 # Changelog
 
+## Não lançado
+
+- Documentação atualizada para a 2.0: o README agora descreve os quatro
+  temas, com paleta de interface e de sintaxe de cada um.
+- Previews novos em `docs/` (um por tema + `paletas.png`), no lugar do
+  `preview.png` antigo, que ainda mostrava o fundo roxo da 1.x. São
+  gerados por `scripts/gen-previews.mjs` a partir dos JSONs dos temas, então
+  não saem de sincronia com as cores reais. O mockup ficou mais completo:
+  explorador com decorações git, abas, breadcrumb, seleção, diagnóstico,
+  painel de terminal com ANSI e barra de status.
+- `docs/` e `scripts/` ficam fora do `.vsix` (`.vscodeignore`).
+
 ## 2.0.0 — 2026-10-16
 
 - **Fim do roxo.** Todos os fundos passam a ser cinzas neutros (grafite
