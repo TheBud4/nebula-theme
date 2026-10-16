@@ -2,14 +2,29 @@
   "name": "nebula-theme",
   "displayName": "Nebula Theme",
   "description": "Dark theme derived from a Space Isolation GRUB menu and its sibling Konsole color scheme — one identity across boot, terminal, and editor.",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "publisher": "thebuda",
   "license": "MIT",
-  "engines": { "vscode": "^1.100.0" },
-  "categories": ["Themes"],
-  "keywords": ["theme", "dark theme", "color theme", "nebula"],
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "color theme",
+    "nebula",
+    "graphite",
+    "amber",
+    "oled"
+  ],
   "icon": "icon.png",
-  "galleryBanner": { "color": "#0D0B14", "theme": "dark" },
+  "galleryBanner": {
+    "color": "#0E0E10",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/TheBud4/nebula-theme"
@@ -20,9 +35,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "Nebula Theme",
+        "label": "Nebula Neon",
         "uiTheme": "vs-dark",
-        "path": "./themes/nebula-theme-color-theme.json"
+        "path": "./themes/nebula-neon-color-theme.json"
+      },
+      {
+        "label": "Nebula Âmbar",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nebula-ambar-color-theme.json"
+      },
+      {
+        "label": "Nebula Cobre",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nebula-cobre-color-theme.json"
+      },
+      {
+        "label": "Nebula OLED",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nebula-oled-color-theme.json"
       }
     ]
   }

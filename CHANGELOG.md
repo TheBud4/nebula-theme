@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.0.0 — 2026-10-16
+
+- **Fim do roxo.** Todos os fundos passam a ser cinzas neutros (grafite
+  `#0E0E10` no tema principal). A hierarquia de camadas segue a mesma:
+  fundo → painel → cromo → borda.
+- **Fim do branco puro.** `#FFFFFF` (parâmetros, propriedades, aba ativa,
+  arquivo selecionado, negrito, "branco brilhante" do terminal) virou
+  `#CFCFD6`.
+- Três temas novos, além do principal (renomeado **Nebula Neon**):
+  **Nebula Âmbar** (cinza médio), **Nebula Cobre** (cinza claro) e
+  **Nebula OLED** (preto absoluto). Os arquivos agora são
+  `themes/nebula-<nome>-color-theme.json`.
+- Os valores deixam de bater com o Konsole/GRUB até esses dois serem
+  atualizados para o novo grafite.
+
 ## 1.3.0 — 2026-08-21
 
 - Separação maior entre a lateral (sidebar, rail de ícones, cabeçalho da

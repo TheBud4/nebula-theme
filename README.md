@@ -16,7 +16,7 @@ da [página de releases](https://github.com/TheBud4/nebula-theme/releases)
 e instale pelo CLI:
 
 ```bash
-code --install-extension nebula-theme-1.3.0.vsix
+code --install-extension nebula-theme-2.0.0.vsix
 ```
 
 ⚠️ **Não copie a pasta do repo direto para `~/.vscode/extensions/`.** O VS
@@ -36,20 +36,32 @@ code --install-extension nebula-theme-*.vsix
 ```
 
 Depois de instalar (por qualquer um dos dois jeitos), reabra o VS Code,
-`Ctrl+Shift+P` → **Preferences: Color Theme** → **Nebula Theme**.
+`Ctrl+Shift+P` → **Preferences: Color Theme** → um dos quatro temas (veja abaixo).
 
-## Paleta
+## Temas
+
+Todos partem de um fundo cinza neutro (sem o roxo das versões 1.x) e usam
+um texto forte cinza-claro em vez de branco puro.
+
+| Tema | Fundo | Destaque | Ideia |
+|---|---|---|---|
+| **Nebula Neon** | `#0E0E10` grafite | verde `#4AFF6B` | O Nebula original, em cinza neutro. Cores neon. |
+| **Nebula Âmbar** | `#232327` cinza médio | âmbar `#FFC857` | Quente: âmbar, laranja, verde-limão, azul-céu. |
+| **Nebula Cobre** | `#2E2E33` cinza claro | cobre `#FFB347` | Mesma ideia, fundo mais claro e cores um pouco mais vivas. |
+| **Nebula OLED** | `#000000` preto | verde `#4AFF6B` | Neon sobre preto absoluto. |
+
+## Paleta (Nebula Neon)
 
 | Papel | Cor |
 |---|---|
-| Fundo | `#0D0B14` |
-| Painéis / sidebar | `#1B1730` |
-| Cromo (title bar, tabs inativas) | `#1A1624` |
-| Borda | `#29243A` |
-| Texto | `#B8B4B0` |
-| Texto forte | `#FFFFFF` |
-| Metadado (line numbers, breadcrumb) | `#7A7290` |
-| Inativo | `#423C56` |
+| Fundo | `#0E0E10` |
+| Painéis / sidebar | `#17171A` |
+| Cromo (title bar, status bar) | `#141416` |
+| Borda | `#26262B` |
+| Texto | `#BDBDC2` |
+| Texto forte | `#CFCFD6` |
+| Metadado (line numbers, breadcrumb) | `#7C7C86` |
+| Inativo | `#3F3F46` |
 | Destaque (cursor, strings, git added) | `#4AFF6B` |
 | Vermelho (erro, deletado) | `#FF4570` |
 | Amarelo (aviso, números) | `#FFD23F` |
